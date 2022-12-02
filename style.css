@@ -1,0 +1,644 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-red: #f44542;
+    --color-grey: #6e6e73;
+    --color-link: #2997ff;
+    --color-green: #34c759;
+    --color-green-medium: #13986d;
+    --color-green-dark: #2a7a85;
+    --color-green-excel: #00a760;
+    --color-cyan: #3e8cff;
+    --color-purple: #6d1a78;
+    --color-grey-light: #86868b;
+    --color-grey-dark: #424245;
+
+    --font-sfpro: -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-halveticaneue: 'Helvetica 65 Medium', sans-serif;
+    --font-myriad-pro: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+    --font-extra-large: 120px;
+    --font-larger: 80px;
+    --font-large: 70px;
+    --font-reason-header: 35px;
+    --font-medium: 60px;
+    --font-small-plus: 30px;
+    --font-small: 20px;
+
+    --padding-section: 50px;
+    --padding-section-mobile: 30px 20px;
+    --margin-section: 25px;
+
+    --border-radius-section: 15px;
+}
+
+
+/* General styles */
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-halveticaneue);
+    font-size: var(--font-medium);
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-halveticaneue);
+    font-size: var(--font-reason-header);
+}
+
+h6 {
+    margin: 25px 0px;
+    font-size: var(--font-small);
+    font-weight: 300;
+}
+
+.color-black {
+    color: black;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.color-green {
+    color: var(--color-green-excel);
+}
+
+.color-cyan {
+    color: var(--color-cyan);
+}
+
+.color-purple {
+    color: var(--color-purple);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-container {
+    border-radius: var(--border-radius-section);
+    padding: var(--padding-section);
+    margin: var(--margin-section);
+}
+
+/* Header */
+.reasons-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+}
+
+.eleven-reasons{
+    margin: 0;
+    padding: 0;
+    color: var(--color-red);
+    font-family: var(--font-halveticaneue);
+    font-size: var(--font-large);
+}
+
+.mac-means-business{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-halveticaneue);
+    font-size: var(--font-large);
+}
+
+.buynow-btn {
+    background-color: white;
+    color: var(--color-grey);
+    border: 1px solid var(--color-grey);
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+/* Reason 1*/
+.reason-first {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    margin-left: 0 !important;
+    margin-bottom: var(--margin-section) !important;
+}
+
+.first-reason-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chip-image {
+    max-width: 650px;
+}
+
+.first-reason-text-wrapper {
+    max-width: 35%;
+}
+
+.pdf > a{
+    color: var(--color-link);
+}
+
+.chip-image-wrapper {
+    margin: auto;
+}
+
+/* Reason 2 & 3 */
+
+/* 2nd */
+.reason-second-third {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.reason-second {
+    background-color: white;
+    width: 60%;
+}
+
+.second-reason-text-wrapper > h6 {
+    max-width: 80%;
+}
+
+
+.macbook-image {
+    max-width: 750px;
+}
+
+/* 3rd */
+.reason-third {
+    background-color: black;
+}
+
+.battery-description {
+    max-width: 70%;
+}
+
+.third-reason-text-header {
+    background: url(./assets/images/green-background.jpg) no-repeat;
+    max-width: 70%;
+    background-size: 100% 100%;
+    background-color: white;
+    background-position-x: 0px;
+    background-position-y: 34px !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent;
+    margin: 20px 0px;
+}
+
+.battery-icon-wrapper {
+    margin-top: 140px;
+    position: relative;
+}
+
+.battery-icon {
+    max-width: 200px;
+}
+
+.battery-hours {
+    position: absolute;
+    font-weight: bold;
+    top: 30%;
+    left: 5%;
+    font-size: var(--font-small-plus);
+}
+
+/* Reason 4 & 5 */
+.reason-fourth-fifth {
+    display: flex;
+}
+
+.reason-fourth {
+    position: relative;
+    width: 50%;
+    min-height: 90vh;
+}
+
+.reason-fifth {
+    position: relative;
+    width: 50%;
+    min-height: 70vh;
+}
+
+.it-image {
+    max-width: 400px;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-70%) !important;
+    bottom: 0;
+}
+
+.without-it-image {
+    max-width: 400px;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-70%) !important;
+    bottom: 0;
+}
+
+.with-it-description {
+    max-width: 70%;
+}
+
+.without-it-description {
+    max-width: 80%;
+}
+
+/* Reason 6 & 7 */
+.reason-sixth-seventh {
+    display: flex;
+}
+
+.reason-sixth {
+    width: 50%;
+    background: linear-gradient(var(--color-green-medium), var(--color-green-dark));
+}
+
+.money-background {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.money-background > span {
+    color: var(--color-green-dark);
+    font-size: var(--font-extra-large);
+}
+
+.reason-seventh {
+    position: relative;
+}
+
+.mac-topdown-image {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Reason 8 & 9 */
+
+.reason-eighth-ninth {
+    display: flex;
+}
+
+.reason-eighth {
+    position: relative;
+    width: 50%;
+}
+
+.programs-image {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.reason-ninth {
+    width: 50%;
+    background-color: black;
+}
+
+.lock-image-wrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.apple-lock-image {
+    width: 100px;
+}
+
+/* Reason 10th */
+.reason-tenth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tenth-reason-texts-section {
+    width: 60%;
+}
+
+.mac-iphone-image-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mac-iphone-image {
+    width: 90%;
+}
+
+/* Reason 11th */
+.reason-eleventh {
+    display: flex;
+    align-items: stretch;
+}
+
+.eleventh-reason-texts-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.eleventh-reason-text-wrapper {
+    margin-top: auto;
+}
+
+.macbooks-image {
+    width: 100%;
+}
+
+.empty-div {
+    visibility: hidden;
+    margin-top: auto;
+}
+
+/* Products section */
+.products-header {
+    margin: 0 auto;
+    font-size: var(--font-larger);
+    font-weight: 550;
+    max-width: 40%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.products-wrapper {
+    display: flex;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 100px;
+}
+
+.product-image {
+    margin-bottom: 40px;
+    margin-top: auto;
+}
+
+.product-title {
+    font-size: var(--font-small-plus);
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.product-slogan-wrapper {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.product-slogan {
+    margin: 0 !important;
+    font-weight: 400;
+    font-size: var(--font-small-plus);
+    color: var(--color-grey-light);
+}
+
+.product-description-fields-wrapper {
+    margin-bottom: 30px;
+}
+
+.products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+/* termms */
+.terms-section > ol > li {
+    color: var(--color-grey);
+    margin-bottom: 20px;
+}
+
+.terms-section > ol > li > a {
+    color: var(--color-grey-dark);
+}
+
+
+/* Ipad Pro Size */
+@media screen and (max-width: 1024px) {
+
+    .first-reason-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    .chip-image-wrapper {
+        margin: 0;
+    }
+
+    .first-reason-text-wrapper {
+        max-width: none;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .reason-second-third {
+        flex-wrap: wrap;
+    }
+
+    .second-reason-content {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-container {
+        width: 100%;
+        margin: 40px 0px;
+    }
+
+    .battery-hours {
+        left: 3%;
+    }
+
+    .reason-fourth-fifth {
+        flex-wrap: wrap;
+    }
+
+    .it-image {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .reason-fourth {
+        min-height: auto;
+    }
+
+    .reason-fifth {
+        min-height: auto;
+    }
+
+    .without-it-image {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .reason-sixth-seventh {
+        flex-wrap: wrap;
+    }
+
+    .mac-topdown-image {
+        width: 70%;
+        bottom: 0;
+        right: 0;
+        max-height: 300px;
+    }
+
+    .seventh-reason-text-wrapper {
+        margin-bottom: 300px;
+    }
+
+    .reason-eighth-ninth {
+        flex-wrap: wrap;
+    }
+
+    .eighth-reason-text-wrapper {
+        margin-bottom: 300px;
+    }
+
+    .programs-image {
+        max-height: 300px;
+    }
+
+    .reason-tenth {
+        flex-wrap: wrap;
+    }
+
+    .mac-iphone-image {
+        width: 50%;
+    }
+
+    .reason-eleventh {
+        flex-wrap: wrap;
+    }
+
+    .macbooks-image {
+        width: 70%;
+    }
+
+    .products-header {
+        max-width: none;
+    }
+
+    .product-box {
+        width: 100%;
+    }
+
+}
+
+/* Phone size */
+@media screen and (max-width: 768px) {
+
+    :root {
+        --font-medium: 40px;
+        --font-larger: 60px;
+        --font-large: 50px;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .reasons-header {
+        text-align: center;
+    }
+
+    .chip-image {
+        margin: 0;
+        width: 100%;
+    }
+
+    .macbook-image {
+        width: 100%;
+    }
+
+    .it-image {
+        width: 100%;
+        margin-left: 0;
+        transform: translateX(0%) !important;
+        max-width: none;
+    }
+
+    .without-it-image {
+        width: 100%;
+        margin-left: 0;
+        transform: translateX(0%) !important;
+        max-width: none;
+    }
+
+    .section-container {
+        width: 100%;
+        margin: 40px 0px;
+        padding: var(--padding-section-mobile);
+        border-radius: 0;
+    }
+
+    .without-it-image {
+        width: 100%;
+    }
+
+    .battery-hours {
+        left: 7%;
+    }
+
+    .third-reason-text-header {
+        max-width: none;
+    }
+
+    .battery-description {
+        max-width: none;
+    }
+
+    .tenth-reason-texts-section {
+        width: 100%;
+    }
+
+    .eleventh-reason-texts-section {
+        width: 100%;
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
+
+    .mac-topdown-image {
+        width: 80%;
+    }
+}
